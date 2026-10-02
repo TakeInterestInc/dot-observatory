@@ -5,7 +5,7 @@ No icon sets or installed browser runtime packages are shipped. Optional Apache 
 | Component | Role / observed version | License status | Shipped? |
 | --- | --- | --- | --- |
 | Original application/server/docs | Candidate 0.2.1 | Apache-2.0 (root LICENSE) | Yes, in candidate |
-| Core source in `guardclaw/` | Fixed baseline `336faa083fccb78a098cf2cf146df3e4d50c1d82` plus included report helper | Apache-2.0; complete `guardclaw/LICENSE` and `guardclaw/NOTICE` unchanged | Yes, source only |
+| Core source in `guardclaw/` | Engine files (`guardian/`, `cmd/guardclaw-scan/`, `testdata/`, `go.mod`, `go.sum`) synced byte-identically from [guardclaw-core](https://github.com/TakeInterestInc/guardclaw-core) main at merge commit `3879bb1c9e3b1804d52ecc17994a6fe8e9dafc7c` (Core 0.2.0, PR #2, with `VERSION` and `CHANGELOG.md`), plus the included report helper, schemas and registry. Reports keep the `baseline_tree` label `336faa083fccb78a098cf2cf146df3e4d50c1d82`, which names the 1,703-ID pattern registry; the sync left that ID set unchanged | Apache-2.0; complete `guardclaw/LICENSE` and `guardclaw/NOTICE` unchanged | Yes, source only |
 | `src/guardclaw-report.mjs`, `src/guardclaw-patterns.mjs` | Validator port and generated 1,703-ID registry | Apache-2.0, explicit SPDX headers; same Core LICENSE/NOTICE apply | Yes |
 | aho-corasick | Optional helper Go dependency v1.0.3 | MIT; full notice under `guardclaw/third-party-notices/` | Notice/lock references only |
 | golang.org/x/text | Optional helper Go dependency v0.40.0 | BSD-3-Clause and PATENTS; full notices under `guardclaw/third-party-notices/` | Notices/lock references only |

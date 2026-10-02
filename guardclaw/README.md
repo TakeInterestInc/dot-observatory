@@ -26,11 +26,11 @@ go test ./...
 go vet ./...
 ```
 
-The module and imports are `github.com/TakeInterestInc/guardclaw-core`, matching
-the repository owner. This is a local release candidate; it does not assert a
-public repository or release tag exists. After publication, installation must
-use that same module path and the exact approved tag. There is no `@latest`
-installation promise in this candidate.
+The module and imports are `github.com/TakeInterestInc/guardclaw-core`, the
+public repository at <https://github.com/TakeInterestInc/guardclaw-core>. The
+engine files here are synced from that repository; `docs/THIRD_PARTY.md` in Dot
+Observatory records the source commit. `cmd/guardclaw-report`, `internal/report`
+and `schemas/` are Dot Observatory additions and are not part of upstream Core.
 
 ## Scan explicit files or directories
 

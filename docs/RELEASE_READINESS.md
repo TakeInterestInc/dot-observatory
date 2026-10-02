@@ -1,6 +1,6 @@
-# Prospective release review
+# Release review
 
-Candidate 0.2.1 is a small standalone local demo. Public publication has not happened. The dashboard code is Apache-2.0 (root LICENSE); the founder may still choose a different license before publishing. The dashboard should remain a separate optional companion to any GuardClaw effort; no private runtime dependency or enforcement claim is present.
+Version 0.2.1 is a small standalone local demo, published on 2 October 2026 at <https://github.com/TakeInterestInc/dot-observatory>. Repository settings were applied the same day; docs/MAINTAINER_SETUP.md records the readback and the proposed controls that are still open. The dashboard code is Apache-2.0 (root LICENSE); the owner may change the license for future releases. The dashboard should remain a separate optional companion to any GuardClaw effort; no private runtime dependency or enforcement claim is present.
 
 ## Ready to evaluate locally
 
@@ -12,9 +12,11 @@ Candidate 0.2.1 is a small standalone local demo. Public publication has not hap
 - Bounded tests and independent review in the local evidence packet. Measured results and untested environments in VERIFICATION.md.
 - Native dots guide and feedback template to test whether the dashboard adds value beyond native Activity.
 
-## Before publishing or calling it open source
+## Release checklist
 
-- [ ] Owner approves a release name, repository/destination, exact contents and public publication.
+Checked items were confirmed on 2 October 2026; unchecked items remain open after publication.
+
+- [x] Owner approves a release name, repository/destination, exact contents and public publication. Published as `TakeInterestInc/dot-observatory`.
 - [ ] Owner reviews rights/IP separation and confirms the Apache-2.0 license or chooses another (for example MIT). An unrelated GuardClaw repository's terms do not license this code.
 - [ ] Inspect the exact source staged files and Git history for private content, credentials, internal paths, generated logs and copied corpus materials.
 - [ ] Keep private adapters and data outside the public repository. No private runtime, dot state scraping or session ingestion.
@@ -22,7 +24,7 @@ Candidate 0.2.1 is a small standalone local demo. Public publication has not hap
 - [ ] Review public claims: observational snapshot only, partial credential detection, no authenticated source proof or security-gateway/enforcement promise.
 - [ ] Confirm README run steps on one independent clean Node installation; validate actual Safari/iPhone and VoiceOver before claiming that coverage.
 - [ ] Decide whether a small volunteer trial improves decisions over guide-only/native Activity; use FEEDBACK.md without telemetry.
-- [ ] Select a real maintainer/security-reporting channel and policy before accepting public contributions. None is invented in this candidate.
+- [x] Security-reporting channel: GitHub private vulnerability reporting is enabled on the repository (API readback, 2 October 2026). A named second maintainer is still needed for independent review; see docs/MAINTAINER_SETUP.md.
 
 ## Deferred without blocking the local demo
 
@@ -30,4 +32,4 @@ Live adapters, continuous refresh, authenticated provenance, collaboration, pers
 
 ## Recommendation
 
-Use the standalone synthetic candidate and guide for a short local review. Public release is held on exact repository identity, owner license/publication decisions and exact-content review. Live-data/security claims require separate engineering and authorization. Chromium responsiveness is demonstrated; actual iPhone and screen-reader compatibility remains a stated limitation.
+Use the standalone synthetic demo and guide for a short local review. The repository is public; the open items are the unchecked boxes above and the branch-protection gaps in docs/MAINTAINER_SETUP.md. Live-data/security claims require separate engineering and authorization. Chromium responsiveness is demonstrated; actual iPhone and screen-reader compatibility remains a stated limitation.

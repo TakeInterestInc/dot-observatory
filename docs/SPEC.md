@@ -4,7 +4,7 @@ Working name: Dot Observatory. Exact repository identity and release terms remai
 
 ## Product contract
 
-Mo can answer: what needs attention, what was implemented, what has supporting checks, what needs the owner, and how recent the source is. A snapshot is a producer's report. The dashboard checks shape and consistency; it does not independently verify claims or authorize actions.
+The person reviewing a snapshot can answer: what needs attention, what was implemented, what has supporting checks, what needs the owner, and how recent the source is. A snapshot is a producer's report. The dashboard checks shape and consistency; it does not independently verify claims or authorize actions.
 
 Work tab: derived snapshot totals, local search, attention/stage filters, task list, selected task inspector. Decisions tab: the selected actual question leads an editorial/proof grid; ruled buttons select one pending recommendation, rationale, trade-offs, disagreement, source and linked task. Resolved outcomes remain available below the continuous work band. Evidence tab: all check records and reported outcomes. Data & safety tab: explicit local import and reset, schema guidance, provenance and runtime boundaries.
 
