@@ -14,7 +14,7 @@ Measured on 2 October 2026 using macOS, Node 25.8.2, installed Playwright 1.62.1
 | Decorative field | Exact local PNG route, pause/resume and reduced-motion checks passed |
 | Fonts and server | Actual custom glyphs; local routes/MIME/HEAD, restrictive CSP and negative Host/method/query checks passed |
 
-The final canonical suite was observed at 07:20:28 UTC. Extended coverage combines its baseline with affected reruns; it is not one fresh complete pass of every check against one final hash. The separate source-repository copy also passed its 12 model tests. Proposed GitHub CI has parsed YAML but has not run on GitHub.
+The final canonical suite was observed at 07:20:28 UTC. Extended coverage combines its baseline with affected reruns; it is not one fresh complete pass of every check against one final hash. The separate source-repository copy also passed its 12 model tests. GitHub CI (`model-tests`) has since run on GitHub Actions and passed on the first `main` push, 2 October 2026.
 
 Independent visual review accepted the approved structural direction at desktop and 375/390px. The author inspected final captures. One Evidence focus-ring/text collision was corrected with spacing; a skip-link halo and 44px minimum button width improve focus/touch handling. Named groups have explicit semantics. Raw findings and corrected font/pixel-probe harness errors remain in the private local evidence packet.
 
