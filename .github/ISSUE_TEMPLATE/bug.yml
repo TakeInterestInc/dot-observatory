@@ -1,0 +1,21 @@
+name: Bug report
+description: Report a reproducible problem using synthetic data.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use bundled examples or authored synthetic data. Do not paste credentials, private logs, imported work data or private screenshots. Security reports use SECURITY.md."
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and expected behavior
+      description: Include the view and a minimal synthetic reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and environment
+      description: App version, Node/browser version and viewport; no machine paths or personal data.
+    validations:
+      required: true

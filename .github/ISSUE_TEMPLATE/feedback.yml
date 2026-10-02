@@ -1,0 +1,19 @@
+name: First-use feedback
+description: Share what helped or confused you in the synthetic local demo.
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: "Try one decision, inspect its source/evidence, and find a stale task. Do not share private data, logs or screenshots. This form submits publicly if the repository is public."
+  - type: textarea
+    id: experience
+    attributes:
+      label: What helped, and what was confusing?
+      description: Include any setup or decision/evidence difficulty using the bundled demo.
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Did it add value beyond native Activity and a short guide?
+      description: A brief concrete example is enough; omit private task details.

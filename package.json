@@ -1,0 +1,14 @@
+{
+  "name": "dot-observatory",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "description": "Local read-only snapshot dashboard with synthetic data",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/model.test.mjs tests/guardclaw-report.test.mjs",
+    "test:ui": "node tests/browser.mjs",
+    "test:scanner-ui": "node tests/guardclaw-browser.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,16 @@
+name: Small improvement
+description: Propose a bounded improvement to the read-only workflow.
+title: "[Idea] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What question or task is hard today?
+      description: Describe the workflow using synthetic examples only.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior and trade-off
+      description: Keep the read-only and explicit-import boundaries in mind.
