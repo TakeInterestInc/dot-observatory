@@ -1,6 +1,6 @@
 # Security Policy
 
-> Included-source note: the upstream Core policy below is retained as reference. This dashboard repository has no verified GitHub private-reporting channel or maintainer contact yet. Do not rely on the tab or response timelines below for this copy; verify and configure the owner’s reporting route before public release.
+> Included-source note: the upstream Core policy below is retained as reference. Report issues in the Core engine to <https://github.com/TakeInterestInc/guardclaw-core> and issues in this bundled copy, the report helper or the dashboard through private vulnerability reporting on <https://github.com/TakeInterestInc/dot-observatory> (enabled 2 October 2026). The response timelines below are the upstream policy, not a commitment for this copy.
 
 ## Reporting a vulnerability
 
