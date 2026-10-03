@@ -433,7 +433,7 @@ func skipWrapper(words []shWord, i int) int {
 	wrapper := strings.ToLower(words[i].text)
 	i++
 	withArg := map[string]string{
-		"sudo":    "ugpChUTrt",
+		"sudo":    "ugpChUTrtD",
 		"doas":    "uC",
 		"env":     "uSC",
 		"nice":    "n",
@@ -457,6 +457,10 @@ func skipWrapper(words []shWord, i int) int {
 			}
 		}
 		if strings.HasPrefix(t, "-") && len(t) > 1 {
+			if (wrapper == "env" || wrapper == "sudo") && t == "--chdir" {
+				i += 2
+				continue
+			}
 			i++
 			if !strings.HasPrefix(t, "--") && len(t) == 2 && strings.IndexByte(withArg, t[1]) >= 0 {
 				i++
